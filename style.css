@@ -1,0 +1,186 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #000; /* entire website background black */
+    color: #fff; /* default text color white */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Heading styling */
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    background: #111; /* dark form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(255,255,255,0.1);
+    max-width: 800px;
+    width: 100%;
+    color: #fff;
+}
+
+/* Inputs and textarea */
+input[type="file"], textarea, input[type="password"] {
+    display: block;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* Paragraphs */
+p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Table styling */
+.file-list {
+    margin-top: 30px;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background: #3498db;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #222;
+}
+
+tr:hover {
+    background: #333;
+}
+
+/* Buttons */
+a.download-btn, a.delete-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a.download-btn {
+    background: #2ecc71;
+}
+
+a.download-btn:hover {
+    background: #27ae60;
+}
+
+a.delete-btn {
+    background: #e74c3c;
+}
+
+a.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 14px;
+    }
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Footer link */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Hide default file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Custom drop area styling */
+.custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #3498db;
+    padding: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #3498db;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    margin-bottom: 20px;
+}
+
+.custom-file-upload:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.custom-file-upload p {
+    font-weight: normal;
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
